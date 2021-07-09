@@ -1,0 +1,30 @@
+package com.suzlon;
+
+public class Suzlon_Emp {
+
+	
+
+ 
+	
+private int empid;
+private int esal;
+
+public int getEmpid(){
+	return empid;
+}
+
+public void setEmpid(int empid){
+	this.empid = empid;
+}
+public void setEmp_esal( int esal){
+	this.esal = esal;
+}
+ public Suzlon_Emp(){}
+
+@Override
+public String toString() {
+	return "suzlon_emp [empid=" + empid + ", esal=" + esal + "]";
+}
+ 
+}
+

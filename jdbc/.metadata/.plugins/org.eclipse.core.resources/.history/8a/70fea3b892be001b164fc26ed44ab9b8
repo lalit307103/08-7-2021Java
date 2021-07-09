@@ -1,0 +1,5 @@
+package pojo;
+
+public class Data_Read_Inject_Collection {
+
+}

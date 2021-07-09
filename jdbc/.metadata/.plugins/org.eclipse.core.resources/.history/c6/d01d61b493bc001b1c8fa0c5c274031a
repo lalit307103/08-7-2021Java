@@ -1,0 +1,5 @@
+package com.jdbc.oracle.util;
+
+public class GetMyOracleConnection {
+
+}

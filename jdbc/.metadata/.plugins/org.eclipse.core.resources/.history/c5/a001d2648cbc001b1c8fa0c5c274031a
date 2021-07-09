@@ -1,0 +1,42 @@
+package com.jdbc;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+ 
+import oracle.jdbc.pool.OracleDataSource;
+
+public class ResultSet_Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Connection con;
+		String qry = "select * from student";
+		PreparedStatement prp;
+		ResultSet rs;
+		OracleDataSource ods;
+		try{
+			ods = new OracleDataSource();
+			ods.setUser("system");
+			ods.setPassword("test");
+			ods.setDriverType("thin");
+			ods.setPortNumber(1521);
+			ods.setServerName("xe");
+			ods.setServerName("localhost");
+			
+			con = ods.getConnection();
+			prp = con.prepareStatement(qry);
+			rs = prp.executeQuery();
+			// looping thru the result set
+			
+			while (rs.next())
+				System.out.println("row no - id and name "+rs.getRow()+" "+rs.getInt(1)+" "+rs.getString("sname"));
+			
+		}
+ catch (Exception e){
+	 e.printStackTrace();
+ }
+		
+	}
+
+}
