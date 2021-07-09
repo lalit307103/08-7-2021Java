@@ -1,0 +1,16 @@
+
+public class EmpTotSalry_Tax {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		EmployeeData emp;
+		
+		emp=new EmployeeData(01,"ashok",25000);
+		
+		emp.getEmpSalDetails();
+		
+
+	}
+
+}

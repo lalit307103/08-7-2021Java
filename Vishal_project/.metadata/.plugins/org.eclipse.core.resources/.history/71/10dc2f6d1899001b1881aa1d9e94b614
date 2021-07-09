@@ -1,0 +1,35 @@
+
+public abstract class TrainFair {
+	
+	String trName;
+	int trNo;
+	final int DIST=100;
+	
+	public TrainFair() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+
+	public TrainFair(String trName, int trNo) {
+		super();
+		this.trName = trName;
+		this.trNo = trNo;
+	}
+
+
+	abstract void calTrFair();
+
+}
+
+
+
+   class PassTrain extends TrainFair{
+	 
+	
+	
+}
+   
+   class ExpressTrain extends TrainFair{
+	   
+   }

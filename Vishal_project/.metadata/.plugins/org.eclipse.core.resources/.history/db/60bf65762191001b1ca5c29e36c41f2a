@@ -1,0 +1,20 @@
+
+public class Calculate_TwoNo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a,b,add,sub,mult,mod;
+		float div;
+		a=Integer.parseInt(args[0]);
+		b=Integer.parseInt(args[1]);
+		add=a+b;
+		sub=a-b;
+		mult=a*b;
+		div=a/b;
+		
+		System.out.println("The nos are "+a +"and "+b);
+		System.out.println("Addition of "+a +" and "+b +" is ="+add);
+
+	}
+
+}

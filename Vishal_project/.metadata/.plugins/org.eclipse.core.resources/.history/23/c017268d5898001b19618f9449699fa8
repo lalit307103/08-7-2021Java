@@ -1,0 +1,20 @@
+
+public class DemoInheritance1 {
+	//inefficient method
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String s[]= {"Physics","Chemistry","Maths"}; 
+		
+		CollegeData cd= new CollegeData(2012,"vishal",s); //child object
+		cd.dispData();
+  		
+		/*Super class properties are not injected
+		 Jvm is takin   g time as to which method should be invoke
+		 */
+		
+
+	}
+
+}

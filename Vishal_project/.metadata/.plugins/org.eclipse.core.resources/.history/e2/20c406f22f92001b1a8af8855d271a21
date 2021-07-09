@@ -1,0 +1,13 @@
+
+public class EmpDataMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		EmployeeData emp;
+		emp=new EmployeeData(99,"ABC");
+		emp.dispEmpData();
+
+	}
+
+}

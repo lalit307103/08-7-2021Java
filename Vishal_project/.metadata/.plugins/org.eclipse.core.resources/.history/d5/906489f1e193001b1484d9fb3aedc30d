@@ -1,0 +1,40 @@
+
+public class Tax_Deduct {
+	
+	//create a reference variable
+	
+	
+	EmployeeData ed=new EmployeeData();
+    int totSalary=ed.getEmpSalDetails();
+    
+    int getTax_Deduction(){
+    	System.out.println("The total Salry of " +totSalary);
+    	
+    	if(totSalary<=250000)
+    	{
+    		System.out.println("tax deduction is Nill");
+    	}
+    	else if(totSalary<=500000) {
+    		System.out.println("Tax deduction is " +0.05*totSalary);
+    	}
+    	else if (totSalary<=1000000) {
+    		System.out.println("Tax deduction is "+0.15*totSalary);
+    	}
+    	else if(totSalary<=1500000) {
+    		System.out.println("Tax deduction is "+0.20*totSalary);
+    	}
+    	else if(totSalary>2000000) {
+         System.out.println("Tax deduction is " +0.3*totSalary);
+    	}
+    	
+    	else {
+    		System.out.println("pls check");
+    	}
+    		return totSalary;}
+    	
+    	
+    	
+    	
+    
+     
+}

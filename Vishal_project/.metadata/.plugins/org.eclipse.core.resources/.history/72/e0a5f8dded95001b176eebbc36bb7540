@@ -1,0 +1,41 @@
+
+public class Emp_Details {
+	
+	//creating properties
+	int empId;
+	String empName;
+	float basSal;
+	
+	//overloaded constructor 
+	public Emp_Details(int empId, String empName, float basSal) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+		this.basSal = basSal;
+	}
+	
+	float getEmp_salary() {
+		
+		float hra,health,pf;
+		hra=basSal*0.12f;
+		health=basSal*.15f;
+		pf=basSal*0.15f;
+		
+	    float totSal=basSal+hra+pf;
+		
+		return totSal;
+	}
+	
+	//default constructor
+	public Emp_Details() {
+		super();
+	}
+	
+	
+	}
+	
+	
+	
+	
+	
+

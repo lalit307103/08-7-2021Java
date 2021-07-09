@@ -1,0 +1,25 @@
+
+public class Assgn_ListEvenOdd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a;
+		a=Integer.parseInt(args[0]);
+		int i=1;
+		
+		System.out.println("The list of even nos upto "+a +" is ");
+		for(i=1;i<=a;++i)
+		{
+		while(i%2==0) {
+			System.out.println(i);
+			i++;
+		}
+		
+		}
+		
+		
+
+	}
+
+}

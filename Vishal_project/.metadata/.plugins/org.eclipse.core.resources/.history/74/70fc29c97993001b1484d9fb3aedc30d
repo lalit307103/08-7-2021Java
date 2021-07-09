@@ -1,0 +1,50 @@
+
+public class EmployeeData {
+	// properties 
+	
+	int empId;
+	String empName;
+	float basSal;
+	int totSal;
+	
+	//default constructor
+	
+	EmployeeData(){
+		
+	}
+	
+	//overloaded constructor
+	
+	EmployeeData(int id,String name,float sal){
+		
+		empId=id;
+		empName=name;
+		basSal=sal;
+	}
+	
+	int getEmpSalDetails() {
+		
+		float hra,da,ca,ma;
+		
+		hra=0.20f*basSal;
+		da=0.05f*basSal;
+		ca=0.04f*basSal;
+		ma=0.15f*basSal;
+		
+		float totalSal=hra+da+ca+ma;
+		totSal=Math.round(totalSal);
+		System.out.println("Details of "+empId +" ");
+		System.out.println(empId +" " +empName +"  " +basSal);
+		
+		System.out.println("total Salary of "+empName + " is "+totSal);
+		
+		return totSal;
+		
+		
+	}
+	
+	
+	
+	
+
+}

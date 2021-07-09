@@ -1,0 +1,60 @@
+
+public abstract class TrainFair {
+	
+	String trName;
+	int trNo;
+	String custInfo;
+	final int DIST=100;
+	
+	public TrainFair() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+
+	public TrainFair(String trName, int trNo,String custInfo) {
+		super();
+		this.trName = trName;
+		this.trNo = trNo;
+		this.custInfo=custInfo;
+	}
+
+
+	abstract void calTrFair();
+
+}
+
+
+
+   class PassTrain extends TrainFair{
+	    int chrgPerKm=10;
+
+		public PassTrain() {  
+			super();
+			// TODO Auto-generated constructor stub
+		}
+
+		public PassTrain(String trName, int trNo,String custInfo) {
+			super(trName, trNo, custInfo);
+			// TODO Auto-generated constructor stub
+		}
+		@Override
+		void calTrFair() {
+		// TODO Auto-generated method stub
+		System.out.println("Charges for this trains are "+chrgPerKm*DIST);
+		}
+	 
+	
+	
+}
+   
+   class ExpTrain extends TrainFair{
+	  int  chrgPerKm=15;
+	  @Override
+	void calTrFair() {
+		// TODO Auto-generated method stub
+		  System.out.println("Charges for Express trains are "+chrgPerKm*DIST);
+		
+	}
+	   
+   }

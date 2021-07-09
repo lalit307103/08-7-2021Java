@@ -1,0 +1,9 @@
+
+public class Tax_Deduct {
+	
+	//create a reference variable
+	
+	
+	EmployeeData ed=new EmployeeData();
+     float totSalary=ed.getEmpSalDetails();
+}

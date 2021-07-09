@@ -1,0 +1,25 @@
+
+public class Object {
+ String s[];
+	
+	public Object() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Object(String[] s) {
+		super();
+		this.s = s;
+	}
+	String[] getObject() {
+		String ss[]={"Class is the blueprint of any programm","Class contains methods and objects"};
+		int i=0;
+		for(i=0;i<=s.length;i++) {
+		
+		System.out.println(ss[i]);
+		
+		}
+		return ss;
+		
+	
+}
+}

@@ -1,0 +1,22 @@
+
+public class StaticMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		StaticMarks ref;
+		
+	StaticMarks sm=new StaticMarks();
+	sm.markscount();
+	StaticMarks sm1=new StaticMarks();
+	sm1.markscount();
+	StaticMarks sm2=new StaticMarks ();
+	sm2.markscount();
+	
+	
+	
+	
+
+	}
+
+	
+}

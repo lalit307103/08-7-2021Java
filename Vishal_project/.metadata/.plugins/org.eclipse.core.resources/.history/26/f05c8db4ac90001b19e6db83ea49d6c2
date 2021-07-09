@@ -1,0 +1,17 @@
+  
+public class HelloWorld {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	System.out.println("Welcome to JAVA");
+    System.out.println("hello VIshal");
+    System.out.println("New  line");
+    int i;
+    for(i=0;i<args.length;i++)
+    	System.out.println("The values are "+" "+args[i]);
+    	
+    	
+	}
+
+}
+ 

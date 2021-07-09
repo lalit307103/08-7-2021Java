@@ -1,0 +1,41 @@
+
+public class CollegeInfo {
+	
+	int enrollYr;
+	String stdName;
+	
+	
+	public CollegeInfo() {
+		super();
+	}
+
+
+	public CollegeInfo(int enrollYr, String stdName) {
+		super();
+		this.enrollYr = enrollYr;
+		this.stdName = stdName;
+	}
+	
+	void dispData() {
+		System.out.println("Super class data is " +enrollYr);
+		System.out.println("Super class data is " +stdName);
+		
+		
+		
+	}
+	
+
+}
+class CollegeData extends CollegeInfo{
+	String sub[];
+
+	public CollegeData() {
+		super();
+	}
+
+	public CollegeData(String[] sub) {
+		super();
+		this.sub = sub;
+	}
+	//
+}

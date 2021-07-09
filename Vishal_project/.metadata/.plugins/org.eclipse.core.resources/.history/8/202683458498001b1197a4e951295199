@@ -1,0 +1,64 @@
+
+public abstract class DemoDynDispEm {
+	int empId;
+	String empName;
+	public DemoDynDispEm() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public DemoDynDispEm(int empId, String empName) {
+		super();
+		this.empId = empId;
+		this.empName = empName;
+	}
+	 void dipEmpDetails() {
+		 System.out.println("emp details are "+empId +" "+ empName);
+	 }
+	 //creating an abstract method so that the class mandatorily have an abstract keyword
+	 abstract int calSal();
+
+}
+
+
+//creating a child class
+
+class RegEmp extends DemoDynDispEm{
+	int bSal;
+
+	public RegEmp() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public RegEmp(int empId, String empName,int bSal) {
+		super(empId, empName);
+		// TODO Auto-generated constructor stub
+		this.bSal=bSal;
+	}
+	
+	int calSal() {
+		int hra=(15*bSal)/100;
+		int ca=(13*bSal)/100;
+		return(bSal+hra+ca);
+	}
+	
+	
+	
+}
+
+
+
+class CtrEmp extends DemoDynDispEm{
+	CtrEmp(){}
+	
+	public CtrEmp(int empId, String empName) {
+		super(empId, empName);
+		// TODO Auto-generated constructor stub
+	}
+
+	//Overriding method
+	int calSal() {
+		return 10000;
+	}
+	
+}

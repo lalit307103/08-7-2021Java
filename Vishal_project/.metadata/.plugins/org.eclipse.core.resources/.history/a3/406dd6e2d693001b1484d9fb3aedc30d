@@ -1,0 +1,25 @@
+
+public class StudDataCapture {
+	//properties
+	int stdId;
+	
+	String stdName;
+	int mrks_mm;
+	int mrks_csc;
+	
+	public StudDataCapture(int stdId, String stdName, int mrks_mm, int mrks_csc) {
+		//overloaded constructor
+		super();
+		this.stdId = stdId;
+		this.stdName = stdName;
+		this.mrks_mm = mrks_mm;
+		this.mrks_csc = mrks_csc;
+	}
+
+	public StudDataCapture() {
+		super();
+	}
+	
+	
+
+}

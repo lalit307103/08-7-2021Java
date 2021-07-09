@@ -1,0 +1,59 @@
+import java.io.IOException;
+
+public class Application_Main {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		
+		Application_Presentation ap=new Application_Presentation();
+		
+		ap.getPresentation();
+		 Object ob=new Object();
+		
+		DataTypes dt=new DataTypes();
+		System.out.println("Enter any no. from above ");
+		//int j=1;
+		boolean flag=true;
+
+		while(flag)
+		
+		 {
+		
+		
+		int i=System.in.read();
+		//System.out.println((char)i);
+		
+		
+	
+
+		switch(i) {
+		
+		case '1':dt.getData();
+		break;
+		
+		case '2':ob.getObject();
+		break;
+		
+		case'3': System.exit(0);
+		break;
+	
+		
+		default:System.out.println("Please enter valid no.");
+		
+		
+		}
+		System.out.println("Do you want to continue Y/N");
+        int y=System.in.read();
+		
+		if(y=='y') {flag=true;
+		}
+	
+		else {
+			flag=false;
+		}
+		
+		
+
+		 }
+		}
+	}

@@ -1,0 +1,23 @@
+
+public class EmployeeData {
+	// properties
+	int empId;
+	String empName;
+	//default constructor
+	EmployeeData(){
+		
+	}
+	
+	//overloaded constructor
+	EmployeeData(int id,String name){
+		id=empId;
+		name=empName;
+	}
+	
+	//method generation
+	
+	void dispEmpData() {
+		System.out.println("The Employee data is " +empId +" " +empName);
+	}
+
+}

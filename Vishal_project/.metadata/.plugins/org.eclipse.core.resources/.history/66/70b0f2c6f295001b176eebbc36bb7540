@@ -1,0 +1,22 @@
+
+public class DataTypes {
+
+	
+
+	String datatypes="csscbnsncmscksknscnscnscnzm ,,bxhchcvcbscb";
+	
+	public DataTypes(String datatypes) {
+		super();
+		this.datatypes = datatypes;
+	}
+
+	public DataTypes() {
+		super();
+	}
+	
+	
+	
+	
+}
+
+

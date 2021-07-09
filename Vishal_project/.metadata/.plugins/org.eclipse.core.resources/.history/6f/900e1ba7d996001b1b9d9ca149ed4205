@@ -1,0 +1,34 @@
+import java.io.IOException;
+
+public class Application_Main {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		
+		Application_Presentation ap=new Application_Presentation();
+		
+		ap.getPresentation();
+		DataTypes dt=new DataTypes();
+		
+		System.out.println("Enter any no. from above ");
+		
+		int i=System.in.read();
+		//System.out.println((char)i);
+		
+		 Object cl=new Object();
+	
+
+		switch(i) {
+		
+		case '1':dt.getData();
+		break;
+		
+		case 2:System.out.println(cl.getData());
+		break;
+		
+		
+		
+		}
+	}
+
+}

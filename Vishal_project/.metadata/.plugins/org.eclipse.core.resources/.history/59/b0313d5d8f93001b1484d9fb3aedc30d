@@ -1,0 +1,22 @@
+
+public class Stud_ProcessData_Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//create an object for student Data capture
+		//Injects the values into the above object
+		
+		StudDataCapture sData=new StudDataCapture(9,"Vishal",30,40);
+		
+		//create an object for Stud_ProcessData_Main for processing the marks
+		Process_Student_Data psd=new Process_Student_Data();
+		//invoking the method
+		
+		int totalMKS=psd.getTotMks(sData);
+		
+		System.out.println("total marks is "+TotalMks);
+
+	}
+
+}

@@ -1,0 +1,19 @@
+
+public class StaticMarks {
+	static int count=0;
+	int temp;
+	public StaticMarks() {
+		++count;
+
+	
+		// TODO Auto-generated constructor stub
+	}
+	
+	static int markscount() {
+		return count;
+		
+		
+	}
+	
+
+}

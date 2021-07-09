@@ -1,0 +1,17 @@
+
+public class Demo_Inheritance1 {
+	//Not an efficient programm
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//CollegeInfo ci=new CollegeInfo(2012,"Vishal");
+		String s[] = {"maths","phy","chem"};
+		CollegeData cd= new CollegeData(s);
+		
+		
+		
+
+	}
+
+}
